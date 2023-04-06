@@ -1,4 +1,5 @@
 :root {
+  --very-light-blue-color: #8ab9ff;
   --light-blue-color: #5395f6;
   --dark-blue-color: #0157d9;
   --green-color: #28a745;
@@ -52,6 +53,14 @@ header .wrapper {
 
 nav .btn {
   width: 116px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
 }
 
 .hero-section .sign-up .btn {
@@ -65,6 +74,113 @@ nav .btn {
 .btn.green:hover {
   background-color: var(--light-green-color);
   cursor: pointer;
+}
+
+.btn.gray {
+  background: var(--gray-color);
+  border: 1px solid #000000;
+}
+
+.btn.gray:hover {
+  background: #000;
+  cursor: pointer;
+}
+
+.btn.white {
+  background: #fff;
+  color: #000;
+  border: none;
+}
+
+.btn.white:hover {
+  background: var(--very-light-blue-color);
+  color: var(--very-dark-gray-color);
+  cursor: pointer;
+}
+
+.btn.selected {
+  background: var(--dark-blue-color);
+  border: 1px solid #000000;
+  color: #fff;
+}
+
+.btn.selected:hover {
+  cursor: pointer !important;
+  background: var(--dark-blue-color) !important;
+  border: 1px solid #000000 !important;
+  color: #fff !important;
+}
+
+.btn.home {
+  padding-left: 35px;
+  position: relative;
+}
+
+.btn.home::before {
+  content: url("assets/logo--Home.svg");
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+
+.btn.home.selected::before {
+  content: url("assets/logo--Home-Selected.svg") !important;
+}
+
+.btn.profile {
+  padding-left: 35px;
+  position: relative;
+}
+
+.btn.profile::before {
+  content: url("assets/logo--Profile.svg");
+  position: absolute;
+  top: 60%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+
+.btn.profile.selected::before {
+  content: url("assets/logo--Profile-selected.svg") !important;
+}
+
+.btn.predict {
+  padding-left: 35px;
+  position: relative;
+}
+
+.btn.predict::before {
+  content: url("assets/logo--Predict.svg");
+  position: absolute;
+  top: 60%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+
+.btn.predict.selected::before {
+  content: url("assets/logo--Predict-selected.svg") !important;
+}
+
+.btn.history {
+  padding-left: 35px;
+  position: relative;
+}
+
+.btn.history::before {
+  content: url("assets/logo--History.svg");
+  position: absolute;
+  top: 60%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+
+.btn.history.selected::before {
+  content: url("assets/logo--History-selected.svg") !important;
+}
+
+.btn.sign-out {
+  margin-left: 50px;
 }
 
 nav input {
@@ -103,6 +219,12 @@ nav {
 
 nav form {
   width: 652px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .navigation {
+  width: 740px;
   display: flex;
   justify-content: space-between;
 }
