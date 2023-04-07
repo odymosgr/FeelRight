@@ -344,6 +344,154 @@ header .logo {
   color: var(--very-dark-gray-color);
 }
 
+/* Home Logged In */
+
+.input-section .wrapper {
+  max-width: 1317px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-data h2 {
+  width: 900;
+  height: 155px;
+  margin: 0;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: var(--dark-blue-color);
+}
+
+/* Nav Bar */
+
+.input-section .home-nav {
+  display: flex;
+}
+
+.input-section .home-nav h3 {
+  margin: 0;
+  width: 171px;
+  height: 44px;
+
+  background-color: var(--light-gray-color);
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.input-section .nav-tab {
+  border-radius: 10px 10px 0px 0px;
+  border: 1px solid transparent;
+  border-color: transparent transparent #000 !important;
+}
+
+.input-section .nav-tab.active {
+  border-color: #000 #000 var(--light-gray-color) !important;
+}
+
+.input-section a {
+  cursor: pointer;
+}
+
+/* Input Data Form */
+
+.input-data {
+  width: 750px;
+}
+
+.input-section .input-form-wrapper {
+  width: 750px;
+  height: 574px;
+  margin-top: -1px;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background: var(--light-gray-color);
+  border: 1px solid #000;
+  border-radius: 0px 10px 10px 10px;
+}
+
+.input-section form {
+  width: 584px;
+  height: 467px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-section .input-form-item {
+  width: 100%;
+  height: 47px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-section .input-form-item label {
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+
+  width: 265px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input-section .input-form-item input {
+  background: #ffffff;
+  border: none;
+  border-radius: 10px;
+
+  width: 265px;
+  padding: 0 15px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input-section .input-form-item input:focus {
+  outline: none;
+}
+
+.input-section .input-form-item i.info-icon {
+  content: url("assets/logo--Info.svg");
+  cursor: pointer;
+}
+
+.input-section .btn.green {
+  display: block;
+}
+
 /* Footer */
 
 footer {
