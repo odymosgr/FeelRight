@@ -528,3 +528,100 @@ footer a:hover {
   color: var(--light-blue-color);
   cursor: pointer;
 }
+
+/* Responsive CSS */
+
+@media (max-width: 1100px) {
+  nav input {
+    width: 160px;
+  }
+
+  header .wrapper {
+    max-width: 800px;
+  }
+
+  .hero-section .wrapper {
+    max-width: 800px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .hero-section .left {
+    text-align: center;
+  }
+
+  .hero-section .left p {
+    line-height: 30px;
+    height: 200px;
+  }
+
+  .hero-section .right {
+    margin: auto;
+  }
+}
+
+@media (max-width: 850px) {
+  header {
+    height: 290px;
+  }
+
+  header .wrapper {
+    max-width: 360px;
+  }
+
+  .hero-section .wrapper {
+    max-width: 360px;
+    height: 780px;
+  }
+
+  header nav {
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  header nav form {
+    flex-direction: column;
+    height: 170px;
+    width: 100%;
+    align-items: center;
+  }
+
+  header nav .btn {
+    justify-content: space-around;
+  }
+
+  header nav input,
+  header nav .btn {
+    width: 280px;
+  }
+
+  header .logo {
+    font-size: 58px;
+  }
+
+  .hero-section {
+    padding-top: 10px;
+  }
+
+  .hero-section .left .left-header {
+    font-size: 32px;
+    line-height: 50px;
+    height: 150px;
+  }
+
+  .hero-section .left .left-text {
+    font-size: 16px;
+    line-height: 20px;
+    height: 150px;
+  }
+
+  .hero-section .right.sign-up {
+    width: 320px;
+  }
+
+  .hero-section .right.sign-up form {
+    width: 260px;
+  }
+}
