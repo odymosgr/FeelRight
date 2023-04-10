@@ -15,8 +15,8 @@
             <div class="logo">Feel Right</div>
           </a>
           <div class="navigation">
-            <button class="btn white home selected">Home</button>
-            <button class="btn white profile">Profile</button>
+            <button class="btn white home">Home</button>
+            <button class="btn white profile selected">Profile</button>
             <button class="btn white predict">Predict</button>
             <button class="btn white history">History</button>
             <button class="btn gray sign-out">Sign Out</button>
@@ -32,46 +32,36 @@
     <div class="input-section">
       <div class="wrapper">
         <div class="input-data">
-          <h2>How Do You Feel?</h2>
+          <h2>Profile Info</h2>
 
-          <div class="home-nav">
-            <a href="#"><h3 class="nav-tab active">Indoors</h3></a>
-            <a href="#"><h3 class="nav-tab">Outdoors</h3></a>
-          </div>
-
-          <div class="input-form-wrapper">
+          <div class="input-form-wrapper profile">
             <form class="data">
               <div class="input-form-item">
-                <label for="item-1" class="input-label">Ambient Temperature</label>
-                <i class="info-icon"></i>
-                <input type="text" id="item-1" name="item-1" />
+                <label for="item-1" class="input-label">Username</label>
+                <i class="lock-icon"></i>
+                <input type="text" id="item-1" name="item-1" placeholder="example_user" disabled />
               </div>
               <div class="input-form-item">
-                <label for="item-2" class="input-label">Ambient Temperature</label>
-                <i class="info-icon"></i>
-                <input type="text" id="item-2" name="item-2" />
+                <label for="item-2" class="input-label">Date of Birth</label>
+                <i class="lock-icon"></i>
+                <input type="text" id="item-2" name="item-2" placeholder="11/1/1990" disabled />
               </div>
               <div class="input-form-item">
-                <label for="item-3" class="input-label">Ambient Temperature</label>
-                <i class="info-icon"></i>
-                <input type="text" id="item-3" name="item-3" />
+                <label for="item-3" class="input-label">Biological Gender</label>
+                <i class="lock-icon"></i>
+                <input type="text" id="item-3" name="item-3" placeholder="male" disabled />
               </div>
               <div class="input-form-item">
-                <label for="item-4" class="input-label">Ambient Temperature</label>
+                <label for="item-4" class="input-label">Activity Levels</label>
                 <i class="info-icon"></i>
-                <input type="text" id="item-4" name="item-4" />
+                <input type="text" id="item-4" name="item-4" placeholder="high" />
               </div>
               <div class="input-form-item">
-                <label for="item-5" class="input-label">Ambient Temperature</label>
+                <label for="item-5" class="input-label">Fat Percentage</label>
                 <i class="info-icon"></i>
-                <input type="text" id="item-5" name="item-5" />
+                <input type="text" id="item-5" name="item-5" placeholder="&lt;15%" />
               </div>
-              <div class="input-form-item">
-                <label for="item-6" class="input-label">Ambient Temperature</label>
-                <i class="info-icon"></i>
-                <input type="text" id="item-6" name="item-6" />
-              </div>
-              <button class="input-form-item btn green">Submit Form</button>
+              <button class="input-form-item btn green">Submit Changes</button>
             </form>
           </div>
         </div>

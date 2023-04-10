@@ -22,6 +22,7 @@ body {
 
 a {
   all: unset;
+  cursor: pointer;
 }
 
 header .wrapper {
@@ -429,6 +430,10 @@ header .logo {
   border-radius: 0px 10px 10px 10px;
 }
 
+.input-form-wrapper.profile {
+  border-radius: 10px;
+}
+
 .input-section form {
   width: 584px;
   height: 467px;
@@ -485,6 +490,11 @@ header .logo {
 
 .input-section .input-form-item i.info-icon {
   content: url("assets/logo--Info.svg");
+  cursor: pointer;
+}
+
+.input-section .input-form-item i.lock-icon {
+  content: url("assets/logo--Lock.svg");
   cursor: pointer;
 }
 
