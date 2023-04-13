@@ -356,7 +356,6 @@ header .logo {
 }
 
 .input-data h2 {
-  width: 900;
   height: 155px;
   margin: 0;
 
@@ -536,6 +535,10 @@ footer a:hover {
     width: 160px;
   }
 
+  header .logo.deactivate {
+    display: none;
+  }
+
   header .wrapper {
     max-width: 800px;
   }
@@ -561,7 +564,7 @@ footer a:hover {
 }
 
 @media (max-width: 850px) {
-  header {
+  header.logged-out {
     height: 290px;
   }
 
@@ -581,6 +584,26 @@ footer a:hover {
     padding-bottom: 10px;
   }
 
+  header nav.main-nav {
+    display: none;
+  }
+
+  header nav.mobile-nav {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  header nav.mobile-nav .logo {
+    font-size: 48px;
+  }
+
+  header nav.mobile-nav .menu-icon {
+    cursor: pointer;
+    content: url("assets/logo--Menu.svg");
+  }
+
   header nav form {
     flex-direction: column;
     height: 170px;
@@ -598,6 +621,7 @@ footer a:hover {
   }
 
   header .logo {
+    display: block !important;
     font-size: 58px;
   }
 
@@ -623,5 +647,71 @@ footer a:hover {
 
   .hero-section .right.sign-up form {
     width: 260px;
+  }
+
+  .input-section .wrapper {
+    width: 320px;
+    height: 100%;
+  }
+
+  .input-section .input-data {
+    align-items: center;
+    height: 100%;
+  }
+
+  .input-section h2 {
+    font-size: 32px;
+    height: 100px;
+  }
+
+  .input-section .home-nav {
+    width: 320px;
+  }
+
+  .input-section .home-nav h3 {
+    width: 160px;
+  }
+
+  .input-section .input-form-wrapper {
+    width: 320px;
+    border-radius: 0px 0px 10px 10px;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+
+  .input-section .input-form-wrapper.profile {
+    border-radius: 10px;
+  }
+
+  .input-section form.data {
+    height: 100%;
+    padding-top: 20px;
+  }
+
+  .input-section .input-form-item label {
+    width: 210px;
+    font-size: 16px;
+  }
+
+  .input-section .input-form-item {
+    flex-wrap: wrap;
+    height: 95px;
+    width: 255px;
+    margin: 15px auto;
+  }
+
+  .input-section .input-form-item i {
+    width: 44px;
+  }
+
+  .input-section .input-form-item input {
+    width: 255px;
+    height: 47px;
+    margin-top: 2px;
+  }
+
+  .input-section .input-form-item.btn {
+    width: 255px;
+    height: 47px;
   }
 }
