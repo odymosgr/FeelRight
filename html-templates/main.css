@@ -5,6 +5,7 @@
   --green-color: #28a745;
   --light-green-color: #20c245;
   --gray-color: #636363;
+  --dark-gray-color: #404040;
   --light-gray-color: #e8e8e8;
   --very-dark-gray-color: #1e1e1e;
 }
@@ -501,6 +502,10 @@ header .logo {
   display: block;
 }
 
+.mobile-menu-container {
+  display: none;
+}
+
 /* Footer */
 
 footer {
@@ -713,5 +718,44 @@ footer a:hover {
   .input-section .input-form-item.btn {
     width: 255px;
     height: 47px;
+  }
+
+  .mobile-menu-container .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 100px;
+    height: 505px;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .mobile-menu-container .mobile-menu .btn.sign-out {
+    margin: 0;
+  }
+
+  .mobile-menu-container {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: var(--dark-gray-color);
+  }
+
+  .mobile-menu-container .close-icon {
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    z-index: 2;
+    right: 20px;
+    top: 20px;
+    content: url("assets/logo--Close.svg");
+  }
+
+  .mobile-menu-container.active {
+    display: block;
   }
 }

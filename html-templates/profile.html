@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header>
@@ -27,8 +28,19 @@
 
         <nav class="mobile-nav">
           <div class="logo">Feel Right</div>
-          <div class="menu-icon"></div>
+          <div class="menu-icon" id="menu-icon"></div>
         </nav>
+
+        <div class="mobile-menu-container" id="mobile-menu-container">
+          <div class="close-icon" id="close-icon"></div>
+          <div class="mobile-menu">
+            <button class="btn white home">Home</button>
+            <button class="btn white profile selected">Profile</button>
+            <button class="btn white predict">Predict</button>
+            <button class="btn white history">History</button>
+            <button class="btn gray sign-out">Sign Out</button>
+          </div>
+        </div>
       </div>
     </header>
 
